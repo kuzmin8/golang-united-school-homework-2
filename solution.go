@@ -17,7 +17,7 @@ const SidesSquare = 4
 const SidesCircle = 0
 
 func CalcSquare(sideLen float64, sidesNum OwnTypes) (res float64) {
-	if sideLen == SidesTriangle {
+	if sidesNum == SidesTriangle {
 		res = (math.Pow(sideLen, 2.0) * math.Sqrt(3.0)) / 4
 	} else if sidesNum == SidesSquare {
 		res = math.Pow(sideLen, 2.0)
